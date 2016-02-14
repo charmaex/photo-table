@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		13AA1B6C1C70D919003905DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B6B1C70D919003905DA /* AppDelegate.swift */; };
-		13AA1B6E1C70D919003905DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B6D1C70D919003905DA /* ViewController.swift */; };
+		13AA1B6E1C70D919003905DA /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B6D1C70D919003905DA /* TableVC.swift */; };
 		13AA1B711C70D919003905DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AA1B6F1C70D919003905DA /* Main.storyboard */; };
 		13AA1B731C70D919003905DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AA1B721C70D919003905DA /* Assets.xcassets */; };
 		13AA1B761C70D919003905DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AA1B741C70D919003905DA /* LaunchScreen.storyboard */; };
+		13AA1B811C710AEB003905DA /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B801C710AEB003905DA /* AddVC.swift */; };
+		13AA1B831C71101C003905DA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B821C71101C003905DA /* DataService.swift */; };
+		13AA1B861C71106A003905DA /* Pics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B851C71106A003905DA /* Pics.swift */; };
+		13AA1B881C711393003905DA /* RoundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B871C711393003905DA /* RoundImage.swift */; };
+		13AA1B8A1C71150D003905DA /* PicsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B891C71150D003905DA /* PicsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13AA1B681C70D919003905DA /* PhotoTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13AA1B6B1C70D919003905DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13AA1B6D1C70D919003905DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13AA1B6D1C70D919003905DA /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		13AA1B701C70D919003905DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13AA1B721C70D919003905DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13AA1B751C70D919003905DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13AA1B771C70D919003905DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13AA1B801C710AEB003905DA /* AddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		13AA1B821C71101C003905DA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		13AA1B851C71106A003905DA /* Pics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pics.swift; sourceTree = "<group>"; };
+		13AA1B871C711393003905DA /* RoundImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImage.swift; sourceTree = "<group>"; };
+		13AA1B891C71150D003905DA /* PicsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		13AA1B6A1C70D919003905DA /* PhotoTable */ = {
 			isa = PBXGroup;
 			children = (
+				13AA1B7F1C70E34A003905DA /* Services */,
+				13AA1B841C71105C003905DA /* Model */,
+				13AA1B7D1C70E30D003905DA /* View */,
+				13AA1B7E1C70E342003905DA /* Controller */,
 				13AA1B6B1C70D919003905DA /* AppDelegate.swift */,
-				13AA1B6D1C70D919003905DA /* ViewController.swift */,
-				13AA1B6F1C70D919003905DA /* Main.storyboard */,
 				13AA1B721C70D919003905DA /* Assets.xcassets */,
-				13AA1B741C70D919003905DA /* LaunchScreen.storyboard */,
 				13AA1B771C70D919003905DA /* Info.plist */,
 			);
 			path = PhotoTable;
+			sourceTree = "<group>";
+		};
+		13AA1B7D1C70E30D003905DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13AA1B6F1C70D919003905DA /* Main.storyboard */,
+				13AA1B741C70D919003905DA /* LaunchScreen.storyboard */,
+				13AA1B871C711393003905DA /* RoundImage.swift */,
+				13AA1B891C71150D003905DA /* PicsCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		13AA1B7E1C70E342003905DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13AA1B6D1C70D919003905DA /* TableVC.swift */,
+				13AA1B801C710AEB003905DA /* AddVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		13AA1B7F1C70E34A003905DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				13AA1B821C71101C003905DA /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		13AA1B841C71105C003905DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13AA1B851C71106A003905DA /* Pics.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13AA1B6E1C70D919003905DA /* ViewController.swift in Sources */,
+				13AA1B811C710AEB003905DA /* AddVC.swift in Sources */,
+				13AA1B6E1C70D919003905DA /* TableVC.swift in Sources */,
 				13AA1B6C1C70D919003905DA /* AppDelegate.swift in Sources */,
+				13AA1B861C71106A003905DA /* Pics.swift in Sources */,
+				13AA1B8A1C71150D003905DA /* PicsCell.swift in Sources */,
+				13AA1B881C711393003905DA /* RoundImage.swift in Sources */,
+				13AA1B831C71101C003905DA /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +337,7 @@
 				13AA1B7C1C70D919003905DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
