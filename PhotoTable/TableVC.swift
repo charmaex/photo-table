@@ -41,4 +41,3 @@ class TableVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
 }
-

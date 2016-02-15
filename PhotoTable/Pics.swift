@@ -47,4 +47,5 @@ class Pics: NSObject, NSCoding {
         aCoder.encodeObject(self._title, forKey: "title")
         aCoder.encodeObject(self._desc, forKey: "desc")
     }
+    
 }
