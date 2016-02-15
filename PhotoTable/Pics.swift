@@ -33,6 +33,7 @@ class Pics: NSObject, NSCoding {
     }
     
     override init() {
+        
     }
     
     convenience required init?(coder aDecoder: NSCoder) {

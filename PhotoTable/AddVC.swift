@@ -14,11 +14,6 @@ class AddVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
     @IBOutlet weak var imgBtn: UIButton!
     @IBOutlet weak var titleTxt: UITextField!
     @IBOutlet weak var descTxt: UITextField!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         

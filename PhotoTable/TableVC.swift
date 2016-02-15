@@ -46,7 +46,8 @@ class TableVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let view = ImageVC(pic: DataService.inst.dataList[indexPath.row])
+        let selectedPic = DataService.inst.dataList[indexPath.row]
+        let view = ImageVC(pic: selectedPic)
         
         presentViewController(view, animated: true, completion: nil)
     }

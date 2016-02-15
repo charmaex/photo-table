@@ -21,8 +21,7 @@ class ImageVC: UIViewController {
     convenience init(pic: Pics) {
         self.init(nibName: "ImageVC", bundle: nil)
         
-        let imgName = pic.img
-        let img = DataService.inst.imageForName(imgName)
+        let img = DataService.inst.imageForName(pic.img)
         
         _img = img
         _title = pic.title
