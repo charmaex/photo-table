@@ -20,6 +20,10 @@ class PicsCell: UITableViewCell {
     
     func initializeCell(pic: Pics) {
         
+        let imgPath = DataService.inst.getPathForImage(pic.img)
+        let img = UIImage(named: imgPath)
+        
+        imgView.image = img
         titleLabel.text = pic.title
         descLabel.text = pic.desc
     }
