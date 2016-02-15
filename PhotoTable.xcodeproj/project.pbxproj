@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		136E1F531C727705006023B0 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E1F521C727705006023B0 /* ImageVC.swift */; };
+		136E1F591C727CA3006023B0 /* ImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 136E1F581C727CA3006023B0 /* ImageVC.xib */; };
 		13AA1B6C1C70D919003905DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B6B1C70D919003905DA /* AppDelegate.swift */; };
 		13AA1B6E1C70D919003905DA /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA1B6D1C70D919003905DA /* TableVC.swift */; };
 		13AA1B711C70D919003905DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AA1B6F1C70D919003905DA /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		136E1F521C727705006023B0 /* ImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
+		136E1F581C727CA3006023B0 /* ImageVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageVC.xib; sourceTree = "<group>"; };
 		13AA1B681C70D919003905DA /* PhotoTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13AA1B6B1C70D919003905DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13AA1B6D1C70D919003905DA /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				13AA1B6F1C70D919003905DA /* Main.storyboard */,
+				136E1F581C727CA3006023B0 /* ImageVC.xib */,
 				13AA1B741C70D919003905DA /* LaunchScreen.storyboard */,
 				13AA1B871C711393003905DA /* RoundImage.swift */,
 				13AA1B891C71150D003905DA /* PicsCell.swift */,
@@ -91,6 +96,7 @@
 			children = (
 				13AA1B6D1C70D919003905DA /* TableVC.swift */,
 				13AA1B801C710AEB003905DA /* AddVC.swift */,
+				136E1F521C727705006023B0 /* ImageVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -170,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136E1F591C727CA3006023B0 /* ImageVC.xib in Resources */,
 				13AA1B761C70D919003905DA /* LaunchScreen.storyboard in Resources */,
 				13AA1B731C70D919003905DA /* Assets.xcassets in Resources */,
 				13AA1B711C70D919003905DA /* Main.storyboard in Resources */,
@@ -187,6 +194,7 @@
 				13AA1B6E1C70D919003905DA /* TableVC.swift in Sources */,
 				13AA1B6C1C70D919003905DA /* AppDelegate.swift in Sources */,
 				13AA1B861C71106A003905DA /* Pics.swift in Sources */,
+				136E1F531C727705006023B0 /* ImageVC.swift in Sources */,
 				13AA1B8A1C71150D003905DA /* PicsCell.swift in Sources */,
 				13AA1B881C711393003905DA /* RoundImage.swift in Sources */,
 				13AA1B831C71101C003905DA /* DataService.swift in Sources */,

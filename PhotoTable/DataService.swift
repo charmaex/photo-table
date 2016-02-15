@@ -56,10 +56,16 @@ class DataService {
         return imgPath
     }
     
-    func getPathForImage(name: String) -> String {
+    private func getPathForImage(name: String) -> String {
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let fullPath = paths[0] as NSString
         return fullPath.stringByAppendingPathComponent(name)
     }
     
+    func imageForName(name: String) -> UIImage? {
+        let path = getPathForImage(name)
+        let img = UIImage(named: path)
+        
+        return img
+    }
 }
