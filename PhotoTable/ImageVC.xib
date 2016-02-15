@@ -8,8 +8,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageVC" customModule="PhotoTable" customModuleProvider="target">
             <connections>
-                <outlet property="btn" destination="08I-Fr-ORX" id="DeZ-TJ-5Jb"/>
+                <outlet property="descLbl" destination="XaP-Tj-FcF" id="iYA-tu-EZ7"/>
                 <outlet property="imgView" destination="NGS-Rs-7tJ" id="ZeM-Bw-PGT"/>
+                <outlet property="titleLbl" destination="cwh-fq-wvA" id="Xia-KX-X43"/>
                 <outlet property="view" destination="5MC-C2-mGW" id="C5M-wQ-t7y"/>
             </connections>
         </placeholder>
@@ -21,9 +22,27 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ffa-ad-EnQ">
                     <rect key="frame" x="8" y="36" width="584" height="548"/>
                     <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwh-fq-wvA">
+                            <rect key="frame" x="0.0" y="0.0" width="584" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="tBO-Rx-mJn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NGS-Rs-7tJ">
-                            <rect key="frame" x="0.0" y="0.0" width="584" height="510"/>
+                            <rect key="frame" x="0.0" y="33" width="584" height="444"/>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XaP-Tj-FcF">
+                            <rect key="frame" x="0.0" y="485" width="584" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="bUi-cm-s4Z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08I-Fr-ORX">
                             <rect key="frame" x="0.0" y="518" width="584" height="30"/>
                             <constraints>

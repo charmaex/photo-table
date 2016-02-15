@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UB7-ka-pFm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tte-7V-5NU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -76,7 +76,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="EzO-FM-VTT" secondAttribute="trailing" id="7AR-21-1Ma"/>
-                            <constraint firstItem="EzO-FM-VTT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="bkn-fT-e8w"/>
+                            <constraint firstItem="EzO-FM-VTT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="F4P-yS-Zhr"/>
                             <constraint firstItem="EzO-FM-VTT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eSV-PO-9SR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EzO-FM-VTT" secondAttribute="bottom" id="n25-Co-inj"/>
                         </constraints>
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1202" y="350"/>
+            <point key="canvasLocation" x="2014" y="350"/>
         </scene>
         <!--AddVC-->
         <scene sceneID="bVf-0q-hLa">
@@ -188,25 +188,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcZ-zr-97g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1918" y="350"/>
+            <point key="canvasLocation" x="2730" y="350"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="AjD-oJ-A1f">
+        <scene sceneID="YsC-fm-JXv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UB7-ka-pFm" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tte-7V-5NU" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UsM-v1-8Bx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iry-s4-j4f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aRa-AD-EQm"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="p8D-qN-XHz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cS9-W7-Xu8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCN-1l-x4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="350"/>
+            <point key="canvasLocation" x="1202" y="350"/>
         </scene>
     </scenes>
     <resources>

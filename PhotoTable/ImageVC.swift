@@ -11,14 +11,22 @@ import UIKit
 class ImageVC: UIViewController {
     
     @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var descLbl: UILabel!
     
     private var _img: UIImage?
+    private var _title: String?
+    private var _desc: String?
     
-    convenience init(img: UIImage?) {
+    convenience init(pic: Pics) {
         self.init(nibName: "ImageVC", bundle: nil)
         
+        let imgName = pic.img
+        let img = DataService.inst.imageForName(imgName)
+        
         _img = img
+        _title = pic.title
+        _desc = pic.desc
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -33,6 +41,8 @@ class ImageVC: UIViewController {
         super.viewDidLoad()
         
         imgView.image = _img
+        titleLbl.text = _title
+        descLbl.text = _desc
     }
     
     @IBAction func closeBtn(sender: UIButton) {
