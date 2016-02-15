@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddVC: UIViewController, UIImagePickerControllerDelegate {
+class AddVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imgView: RoundImage!
     @IBOutlet weak var imgBtn: UIButton!
@@ -20,9 +20,17 @@ class AddVC: UIViewController, UIImagePickerControllerDelegate {
         
     }
     
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        imgView.image = image
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     @IBAction func addImg(sender: UIButton!) {
         let imgPicker = UIImagePickerController()
+        imgPicker.delegate = self
         presentViewController(imgPicker, animated: true, completion: nil)
+        
+        imgBtn.setTitle("", forState: .Normal)
     }
     
     @IBAction func addPost(sender: UIButton!) {

@@ -14,6 +14,7 @@ class RoundImage: UIImageView {
         super.awakeFromNib()
         
         layer.cornerRadius = self.bounds.width / 2
+        clipsToBounds = true
     }
     
 }
