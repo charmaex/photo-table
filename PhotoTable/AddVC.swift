@@ -34,7 +34,13 @@ class AddVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
     }
     
     @IBAction func addPost(sender: UIButton!) {
-    
+        guard let img = imgView.image, let title = titleTxt.text, let description = descTxt.text else {
+            return
+        }
+        
+        DataService.inst.addPic(img, title: title, description: description)
+        
+        navigationController?.popViewControllerAnimated(true)
     }
     
 }

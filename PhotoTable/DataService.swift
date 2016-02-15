@@ -43,6 +43,8 @@ class DataService {
         }
         
         _dataList = array
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("reloadData", object: nil)
     }
     
     private func getImageAndSave(img: UIImage) -> String {
@@ -54,8 +56,8 @@ class DataService {
         return imgPath
     }
     
-    private func getPathForImage(name: String) -> String {
-        let paths = NSSearchPathForDirectoriesInDomains(.UserDirectory, .UserDomainMask, true)
+    func getPathForImage(name: String) -> String {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentationDirectory, .UserDomainMask, true)
         let fullPath = paths[0] as NSString
         return fullPath.stringByAppendingPathComponent(name)
     }

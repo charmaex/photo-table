@@ -18,7 +18,12 @@ class TableVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         table.dataSource = self
         table.delegate = self
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTable:", name: "reloadData", object: nil)
+        
         DataService.inst.loadData()
+    }
+    
+    func reloadTable(notif: AnyObject) {
         table.reloadData()
     }
     
