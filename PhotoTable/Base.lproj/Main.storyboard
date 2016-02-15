@@ -18,12 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="154" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EzO-FM-VTT">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="116" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="EzO-FM-VTT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PicsCell" rowHeight="116" id="qWH-Vd-Ktc" customClass="PicsCell" customModule="PhotoTable" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="116"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PicsCell" id="qWH-Vd-Ktc" customClass="PicsCell" customModule="PhotoTable" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="65" width="600" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qWH-Vd-Ktc" id="gIL-Qq-Nm7">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
@@ -76,7 +76,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="EzO-FM-VTT" secondAttribute="trailing" id="7AR-21-1Ma"/>
-                            <constraint firstItem="EzO-FM-VTT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bkn-fT-e8w"/>
+                            <constraint firstItem="EzO-FM-VTT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="bkn-fT-e8w"/>
                             <constraint firstItem="EzO-FM-VTT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eSV-PO-9SR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EzO-FM-VTT" secondAttribute="bottom" id="n25-Co-inj"/>
                         </constraints>
