@@ -21,6 +21,7 @@ class AddVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
         imgView.image = image
         dismissViewControllerAnimated(true, completion: nil)
     }

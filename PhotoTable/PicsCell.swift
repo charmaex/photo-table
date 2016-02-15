@@ -13,10 +13,6 @@ class PicsCell: UITableViewCell {
     @IBOutlet weak var imgView: RoundImage!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
     
     func initializeCell(pic: Pics) {
         
