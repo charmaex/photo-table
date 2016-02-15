@@ -29,7 +29,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="bJ2-96-duC" customClass="RoundImage" customModule="PhotoTable" customModuleProvider="target">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJ2-96-duC" customClass="RoundImage" customModule="PhotoTable" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="8" width="100" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="YzA-y9-BZf"/>
@@ -209,7 +209,4 @@
             <point key="canvasLocation" x="1202" y="350"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="barrel-water-bridge" width="550" height="440"/>
-    </resources>
 </document>
