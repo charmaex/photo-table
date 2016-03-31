@@ -18,7 +18,7 @@ class TableVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         table.dataSource = self
         table.delegate = self
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTable:", name: "reloadData", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(TableVC.reloadTable(_:)), name: "reloadData", object: nil)
         
         DataService.inst.loadData()
     }
