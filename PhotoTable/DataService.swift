@@ -35,10 +35,7 @@ class DataService {
     }
     
     func loadData() {
-        guard let data = NSUserDefaults.standardUserDefaults().objectForKey("data") as? NSData else {
-            return
-        }
-        guard let array = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [Pics] else {
+        guard let data = NSUserDefaults.standardUserDefaults().objectForKey("data") as? NSData, let array = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [Pics] else {
             return
         }
         
